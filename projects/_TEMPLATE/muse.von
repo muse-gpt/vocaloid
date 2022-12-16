@@ -1,0 +1,36 @@
+[project]
+id = "muse-template"
+version = "0.1.0"
+
+[render]
+width = 1920
+height = 1080
+frame_rate = 24
+
+[[entries]]
+id = "landscape"
+source = "assets/scenes/landscape.muse"
+
+[[entries.outputs]]
+id = "preview"
+kind = "preview"
+path = "library/landscape/preview"
+
+[[entries]]
+id = "vertical"
+source = "assets/scenes/vertical.muse"
+
+[[entries.outputs]]
+id = "preview"
+kind = "preview"
+path = "library/vertical/preview"
+
+[[entries]]
+id = "data"
+source = "assets/scenes/data.muse"
+
+[[entries.outputs]]
+id = "timing"
+kind = "data"
+format = "json"
+path = "library/data/timing.json"

@@ -1,0 +1,19 @@
+{
+    "private": true,
+    "packageManager": "pnpm@9.15.0",
+    "scripts": {
+        "muse:doctor": "muse doctor",
+        "muse:check": "muse check projects/残光/assets/scenes/landscape.muse && muse check projects/残光/assets/scenes/vertical.muse && muse check projects/残光/assets/scenes/data.muse",
+        "muse:preview": "muse preview projects/残光/assets/scenes/landscape.muse",
+        "muse:compile": "muse compile projects/残光/assets/scenes/landscape.muse",
+        "build": "cargo build --release",
+        "test": "cargo test --release",
+        "fmt": "cargo fmt --all",
+        "p": "git push && git push --tags --prune",
+        "reset": "git reset Head~ --soft",
+        "u": "cargo upgrade --workspace"
+    },
+    "devDependencies": {
+        "@muse-gpt/muse": "0.0.1"
+    }
+}

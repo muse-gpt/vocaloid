@@ -1,0 +1,42 @@
+# OS
+.DS_Store
+.DS_Store/
+Thumbs.db
+thumbs.db
+time-travel.*
+
+# IDE
+.vscode/
+.vs/
+.idea/
+*.iml
+
+# Rust
+target/
+Cargo.lock
+
+# Node / Muse CLI install
+node_modules/
+
+# Muse Studio — rebuildable (Unity Library analogue)
+**/library/
+# Current CLI default: muse preview writes <source-dir>/preview/
+**/preview/
+# Export / render litter if dropped beside sources
+*.mid
+*.midi
+*.wav
+*.mp3
+*.mp4
+*.musicxml
+
+# Per-song local reference packs (never commit)
+projects/*/_local_ref/
+
+# Imported binaries under assets (keep scenes, meta, readmes)
+projects/*/assets/audio/**
+projects/*/assets/textures/**
+!projects/*/assets/audio/README.md
+!projects/*/assets/textures/README.md
+!projects/_TEMPLATE/assets/audio/README.md
+!projects/_TEMPLATE/assets/textures/README.md
