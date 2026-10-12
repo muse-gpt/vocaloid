@@ -24,6 +24,7 @@
 | --- | --- | --- |
 | palette 底板 `image` | 进行中 | `palette_plate.png`（本地 textures） |
 | `vignette 0.35` | 进行中 | 对齐 `_local_ref` timeline 默认 post |
-| bloom / grain / LUT | 未做 | 下一刀 |
+| `grain 0.06` | 进行中 | 同默认 post；随帧时间抖动 |
+| bloom / LUT | 未做 | 下一刀 |
 | shot / 歌词层 | 未做 | P1 IR |
 
