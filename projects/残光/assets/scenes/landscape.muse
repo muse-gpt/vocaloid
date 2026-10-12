@@ -21,6 +21,7 @@ music for main {
 visual for main {
   background color "#0b1524"
   image "assets/textures/palette_plate.png"
+  bloom 0.3
   vignette 0.35
   grain 0.06
 }
