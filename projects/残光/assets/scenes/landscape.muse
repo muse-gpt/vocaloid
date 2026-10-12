@@ -33,6 +33,7 @@ visual for main {
 # Shot scene overlays (grade cue until per-scene plates exist).
 visual for main scene ember {
   lut P1 0.4
+  fx pulse 0.85
 }
 
 visual for main scene illust {

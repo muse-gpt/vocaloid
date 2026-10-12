@@ -30,5 +30,5 @@
 | `bloom 0.3` | 进行中 | 单 pass 高光软糊；非完整 Kawase |
 | `lut P2 0.25` | 进行中 | 内置渐变贴图 P1–P5；也可 `lut "path.png" mix` |
 | `shot` + `visual … scene` | 进行中 | compose 按 t 叠 scene 层；manifest `active_shots` |
-| 程序字效（shot FX） | 未做 | 非独立歌词层；随 shot 场景/参数走 |
+| 程序字效（shot FX） | 进行中 | 首刀 `fx pulse`（镜头进度中心光）；kanji 等后续 |
 
