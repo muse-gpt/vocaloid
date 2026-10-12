@@ -1,0 +1,10 @@
+namespace zanko.data;
+
+# 残光 · 分析与复查数据入口
+timeline {
+  act full_song : 0..226
+}
+
+intent {
+  emotion "timing-data" intensity 0.1 for full_song
+}

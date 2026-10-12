@@ -1,0 +1,14 @@
+namespace zanko.vertical;
+
+# 残光 · 9:16 独立构图（效果对齐用占位）
+timeline {
+  act main : 0..226
+}
+
+intent {
+  emotion "close portrait afterglow" intensity 0.75 for main
+}
+
+visual for main {
+  background color "#101820"
+}

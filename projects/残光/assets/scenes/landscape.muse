@@ -1,0 +1,30 @@
+namespace zanko.landscape;
+
+# 残光 · 16:9 主剪辑（效果对齐：palette 底板 + 分析 BPM）
+timeline {
+  act main : 0..226
+}
+
+tempo { at 0 bpm 130.5 }
+
+intent {
+  emotion "afterglow city fall" intensity 0.7 for main
+}
+
+music for main {
+  key "C minor"
+  meter 4/4
+  motif "C4 Eb4 G4 C5"
+  density 0.35
+}
+
+visual for main {
+  background color "#0b1524"
+  image "assets/textures/palette_plate.png"
+  vignette 0.35
+}
+
+orchestrate for main {
+  hard_constraints: ["keep palette readable"]
+  soft_preferences: ["slow camera drift"]
+}
