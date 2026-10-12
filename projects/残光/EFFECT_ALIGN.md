@@ -29,6 +29,6 @@
 | `grain 0.06` | 进行中 | 同默认 post；随帧时间抖动 |
 | `bloom 0.3` | 进行中 | 单 pass 高光软糊；非完整 Kawase |
 | `lut P2 0.25` | 进行中 | 内置渐变贴图 P1–P5；也可 `lut "path.png" mix` |
-| `shot` 时间轴 | 进行中 | IR `plan.shots`；合成尚未按 shot 切层 |
+| `shot` + `visual … scene` | 进行中 | compose 按 t 叠 scene 层；manifest `active_shots` |
 | 程序字效（shot FX） | 未做 | 非独立歌词层；随 shot 场景/参数走 |
 

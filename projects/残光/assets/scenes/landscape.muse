@@ -1,8 +1,11 @@
 namespace zanko.landscape;
 
-# 残光 · 16:9 主剪辑（效果对齐：palette 底板 + 分析 BPM）
+# 残光 · 16:9 主剪辑（效果对齐：palette 底板 + shot 切 scene 层）
 timeline {
   act main : 0..226
+  shot s01 : 0..4 scene ember for main
+  shot s02 : 4..8 scene illust for main
+  shot s03 : 8..16 scene thread for main
 }
 
 tempo { at 0 bpm 130.5 }
@@ -25,6 +28,19 @@ visual for main {
   bloom 0.3
   vignette 0.35
   grain 0.06
+}
+
+# Shot scene overlays (grade cue until per-scene plates exist).
+visual for main scene ember {
+  lut P1 0.4
+}
+
+visual for main scene illust {
+  lut P2 0.3
+}
+
+visual for main scene thread {
+  lut P4 0.35
 }
 
 orchestrate for main {
