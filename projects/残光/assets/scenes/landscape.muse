@@ -4,8 +4,8 @@ namespace zanko.landscape;
 timeline {
   act main : 0..226
   shot s01 : 0..4 scene ember for main
-  shot s02 : 4..8 scene illust for main
-  shot s03 : 8..16 scene thread for main
+  shot s02 : 4..8 scene illust for main xfade 0.5
+  shot s03 : 8..16 scene thread for main flash 0.25
 }
 
 tempo { at 0 bpm 130.5 }

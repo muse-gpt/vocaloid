@@ -31,4 +31,5 @@
 | `lut P2 0.25` | 进行中 | 内置渐变贴图 P1–P5；也可 `lut "path.png" mix` |
 | `shot` + `visual … scene` | 进行中 | compose 按 t 叠 scene 层；manifest `active_shots` |
 | 程序字效（shot FX） | 进行中 | `fx pulse`；`fx stamp "残"`（几何砸字占位） |
+| shot 转场 | 进行中 | `xfade` / `flash` / `cut` + bars；compose 混前后 look |
 
