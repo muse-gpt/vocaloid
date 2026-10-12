@@ -26,6 +26,6 @@
 | `vignette 0.35` | 进行中 | 对齐 `_local_ref` timeline 默认 post |
 | `grain 0.06` | 进行中 | 同默认 post；随帧时间抖动 |
 | `bloom 0.3` | 进行中 | 单 pass 高光软糊；非完整 Kawase |
-| LUT | 未做 | 下一刀 |
+| `lut P2 0.25` | 进行中 | 内置渐变贴图 P1–P5；也可 `lut "path.png" mix` |
 | shot / 歌词层 | 未做 | P1 IR |
 
