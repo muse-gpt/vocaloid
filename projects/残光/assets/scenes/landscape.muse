@@ -38,6 +38,7 @@ visual for main scene ember {
 
 visual for main scene illust {
   lut P2 0.3
+  fx stamp "残" 0.9
 }
 
 visual for main scene thread {
