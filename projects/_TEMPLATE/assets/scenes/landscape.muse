@@ -1,0 +1,13 @@
+namespace template.landscape;
+
+timeline {
+  act main : 0..32
+}
+
+intent {
+  emotion "placeholder resolve" intensity 0.6 for main
+}
+
+visual for main {
+  background color "#0b1524"
+}

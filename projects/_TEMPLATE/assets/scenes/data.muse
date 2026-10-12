@@ -1,0 +1,9 @@
+namespace template.data;
+
+timeline {
+  act full : 0..32
+}
+
+intent {
+  emotion "timing-data" intensity 0.1 for full
+}

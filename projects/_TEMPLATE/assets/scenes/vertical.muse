@@ -1,0 +1,13 @@
+namespace template.vertical;
+
+timeline {
+  act main : 0..32
+}
+
+intent {
+  emotion "placeholder portrait" intensity 0.65 for main
+}
+
+visual for main {
+  background color "#101820"
+}
