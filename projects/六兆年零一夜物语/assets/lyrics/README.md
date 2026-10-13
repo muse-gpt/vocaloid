@@ -7,4 +7,6 @@
 - 全片：`asset song_lyric = "_local_ref/lyrics/song.timing.json"`
 - `chorus_cut`：`asset chorus_lyric = "_local_ref/lyrics/chorus.timing.json"`
 
-行级可选 `cue_id`（稳定语义片段）：供日后中英显示对齐，不把日语词 timing 按索引套到译文。未授权前 localization 表仍只放 `_local_ref/`。
+行级可选 `cue_id`（稳定语义片段）：供日后中英显示对齐，不把日语词 timing 按索引套到译文。
+
+本机可另放 `_local_ref/lyrics/chorus.locale.json`（CueId×locale 显示表；`muse-ir` 已能加载，表面绑定未接）。未授权前 localization 全文不进开源仓。
