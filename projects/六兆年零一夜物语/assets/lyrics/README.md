@@ -9,4 +9,11 @@
 
 行级可选 `cue_id`（稳定语义片段）：供日后中英显示对齐，不把日语词 timing 按索引套到译文。
 
-本机可另放 `_local_ref/lyrics/chorus.locale.json`（CueId×locale 显示表；`muse-ir` 已能加载，表面绑定未接）。未授权前 localization 全文不进开源仓。
+本机可另放 `_local_ref/lyrics/chorus.locale.json`（CueId×locale 显示表）。`chorus_cut` 用：
+
+```muse
+localized from chorus_locale
+lang "zh-Hans"
+```
+
+未授权前 localization 全文不进开源仓；译文缺项时 `muse check` 失败。

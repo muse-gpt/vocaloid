@@ -12,6 +12,7 @@ tempo { bpm 186 }
 
 asset song = "_local_ref/audio/song.wav";
 asset chorus_lyric = "_local_ref/lyrics/chorus.timing.json";
+asset chorus_locale = "_local_ref/lyrics/chorus.locale.json";
 
 audio for chorus {
   track master {
@@ -25,6 +26,8 @@ audio for chorus {
 
 lyric for chorus {
   from chorus_lyric
+  localized from chorus_locale
+  lang "zh-Hans"
   layer {
     role foreground
     size 48
