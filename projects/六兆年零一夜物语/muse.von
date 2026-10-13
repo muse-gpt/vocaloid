@@ -44,4 +44,48 @@
       ]
     }
   ]
+  jobs: [
+    {
+      id: "ja-landscape"
+      entry: "landscape"
+      context: { locale: "ja", viewport: "1920x1080", edit: "full" }
+      outputs: ["preview", "video"]
+    }
+    {
+      id: "zh-landscape"
+      entry: "landscape"
+      context: { locale: "zh-Hans", viewport: "1920x1080", edit: "full" }
+      outputs: ["preview", "video"]
+    }
+    {
+      id: "en-landscape"
+      entry: "landscape"
+      context: { locale: "en", viewport: "1920x1080", edit: "full" }
+      outputs: ["preview", "video"]
+    }
+    {
+      id: "ja-vertical"
+      entry: "vertical"
+      context: { locale: "ja", viewport: "1080x1920", edit: "full" }
+      outputs: ["preview", "video"]
+    }
+    {
+      id: "zh-vertical"
+      entry: "vertical"
+      context: { locale: "zh-Hans", viewport: "1080x1920", edit: "full" }
+      outputs: ["preview", "video"]
+    }
+    {
+      id: "en-vertical"
+      entry: "vertical"
+      context: { locale: "en", viewport: "1080x1920", edit: "full" }
+      outputs: ["preview", "video"]
+    }
+    {
+      id: "zh-chorus-cut"
+      entry: "chorus_cut"
+      context: { locale: "zh-Hans", viewport: "1920x1080", edit: "chorus_short" }
+      outputs: ["preview", "video"]
+    }
+  ]
 }
