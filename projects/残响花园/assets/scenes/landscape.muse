@@ -1,0 +1,73 @@
+namespace echo.garden.landscape;
+
+# 残响花园 · 20s 副歌纵切（16:9）。占位歌词/导引音，非参考曲。
+timeline {
+  act chorus : 0s..20s
+  shot c01 : 0s..6s scene night for chorus
+  shot c02 : 6s..14s scene bloom for chorus xfade 0.5
+  shot c03 : 14s..20s scene dawn for chorus
+}
+
+tempo { bpm 120 }
+
+asset chorus_bed = "assets/audio/chorus_bed.wav";
+asset chorus_lyric = "assets/lyrics/chorus.timing.json";
+
+audio for chorus {
+  track master {
+    from chorus_bed
+    role song
+    offset 0s
+    clip 0s..20s
+    gain 0.0
+  }
+}
+
+lyric for chorus {
+  from chorus_lyric
+  layer {
+    role foreground
+    size 48
+    align center
+    safe 0.1
+    highlight color "#ffe08a"
+    post_group none
+  }
+}
+
+intent {
+  emotion "echo garden chorus" intensity 0.75 for chorus
+}
+
+music for chorus {
+  key "A minor"
+  meter 4/4
+  motif "A3 C4 E4 A4"
+  density 0.4
+}
+
+visual for chorus {
+  background color "#0b1524"
+  bloom 0.25
+  vignette 0.3
+  grain 0.05
+}
+
+visual for chorus scene night {
+  lut P1 0.35
+  fx pulse 0.55
+}
+
+visual for chorus scene bloom {
+  lut P2 0.4
+  fx pulse 0.8
+}
+
+visual for chorus scene dawn {
+  lut P4 0.45
+}
+
+orchestrate for chorus {
+  hard_constraints: ["no_flash_white_transition", "lyric_above_bloom"]
+  soft_preferences: ["paper flower lift"]
+}

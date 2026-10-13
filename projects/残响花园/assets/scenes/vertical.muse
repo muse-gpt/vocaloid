@@ -1,0 +1,73 @@
+namespace echo.garden.vertical;
+
+# 残响花园 · 20s 副歌纵切（9:16）。共享时钟与 lyric 资产，构图与安全区独立。
+timeline {
+  act chorus : 0s..20s
+  shot c01 : 0s..7s scene night for chorus
+  shot c02 : 7s..14s scene bloom for chorus iris 0.4
+  shot c03 : 14s..20s scene dawn for chorus
+}
+
+tempo { bpm 120 }
+
+asset chorus_bed = "assets/audio/chorus_bed.wav";
+asset chorus_lyric = "assets/lyrics/chorus.timing.json";
+
+audio for chorus {
+  track master {
+    from chorus_bed
+    role song
+    offset 0s
+    clip 0s..20s
+    gain 0.0
+  }
+}
+
+lyric for chorus {
+  from chorus_lyric
+  layer {
+    role foreground
+    size 40
+    align center
+    safe 0.14
+    highlight color "#ffe08a"
+    post_group none
+  }
+}
+
+intent {
+  emotion "echo garden chorus vertical" intensity 0.75 for chorus
+}
+
+music for chorus {
+  key "A minor"
+  meter 4/4
+  motif "A3 C4 E4 A4"
+  density 0.4
+}
+
+visual for chorus {
+  background color "#0b1524"
+  bloom 0.2
+  vignette 0.4
+  grain 0.05
+}
+
+visual for chorus scene night {
+  lut P1 0.35
+  fx pulse 0.5
+}
+
+visual for chorus scene bloom {
+  lut P2 0.4
+  fx pulse 0.75
+}
+
+visual for chorus scene dawn {
+  lut P4 0.45
+}
+
+orchestrate for chorus {
+  hard_constraints: ["no_flash_white_transition", "lyric_safe_area"]
+  soft_preferences: ["taller safe margin"]
+}

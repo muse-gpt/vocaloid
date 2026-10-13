@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "lang": "zh-Hans",
+  "time_unit": "seconds",
+  "lines": [
+    {
+      "id": "L1",
+      "words": [
+        { "id": "W1", "text": "残", "start": 0.0, "end": 0.45 },
+        { "id": "W2", "text": "响", "start": 0.45, "end": 0.9 },
+        { "id": "W3", "text": "花", "start": 0.9, "end": 1.35 },
+        { "id": "W4", "text": "园", "start": 1.35, "end": 2.0 }
+      ]
+    },
+    {
+      "id": "L2",
+      "words": [
+        { "id": "W5", "text": "夜", "start": 4.0, "end": 4.5 },
+        { "id": "W6", "text": "色", "start": 4.5, "end": 5.0 },
+        { "id": "W7", "text": "还", "start": 5.0, "end": 5.4 },
+        { "id": "W8", "text": "未", "start": 5.4, "end": 5.8 },
+        { "id": "W9", "text": "散", "start": 5.8, "end": 6.5 }
+      ]
+    },
+    {
+      "id": "L3",
+      "words": [
+        { "id": "W10", "text": "纸", "start": 8.0, "end": 8.45 },
+        { "id": "W11", "text": "花", "start": 8.45, "end": 8.9 },
+        { "id": "W12", "text": "往", "start": 8.9, "end": 9.3 },
+        { "id": "W13", "text": "上", "start": 9.3, "end": 9.7 },
+        { "id": "W14", "text": "开", "start": 9.7, "end": 10.5 }
+      ]
+    },
+    {
+      "id": "L4",
+      "words": [
+        { "id": "W15", "text": "声", "start": 12.0, "end": 12.5 },
+        { "id": "W16", "text": "纹", "start": 12.5, "end": 13.0 },
+        { "id": "W17", "text": "绕", "start": 13.0, "end": 13.5 },
+        { "id": "W18", "text": "成", "start": 13.5, "end": 14.0 },
+        { "id": "W19", "text": "环", "start": 14.0, "end": 15.0 }
+      ]
+    },
+    {
+      "id": "L5",
+      "words": [
+        { "id": "W20", "text": "晨", "start": 16.0, "end": 16.5 },
+        { "id": "W21", "text": "光", "start": 16.5, "end": 17.0 },
+        { "id": "W22", "text": "把", "start": 17.0, "end": 17.4 },
+        { "id": "W23", "text": "回", "start": 17.4, "end": 17.9 },
+        { "id": "W24", "text": "声", "start": 17.9, "end": 18.5 },
+        { "id": "W25", "text": "照", "start": 18.5, "end": 19.5 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+namespace echo.garden.data;
+
+# 数据入口：共享副歌时钟与歌词轨，供 timing 产物声明（本切片仅 check/compile）。
+timeline {
+  act chorus : 0s..20s
+}
+
+tempo { bpm 120 }
+
+asset chorus_lyric = "assets/lyrics/chorus.timing.json";
+
+lyric for chorus {
+  from chorus_lyric
+}
+
+intent {
+  emotion "echo garden data" intensity 0.2 for chorus
+}
+
+orchestrate for chorus {
+  hard_constraints: ["timing_export_ready"]
+}
