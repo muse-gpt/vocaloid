@@ -6,6 +6,8 @@ timeline {
   shot s01 : 0..4 scene ember for main
   shot s02 : 4..8 scene illust for main slices 0.5
   shot s03 : 8..16 scene thread for main iris 0.5
+  shot s04 : 16..24 scene illust for main reverse s02
+  shot s05 : 24..32 scene ember for main freeze s01
 }
 
 tempo { at 0 bpm 130.5 }

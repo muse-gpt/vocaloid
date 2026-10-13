@@ -32,4 +32,5 @@
 | `shot` + `visual … scene` | 进行中 | compose 按 t 叠 scene 层；manifest `active_shots` |
 | 程序字效（shot FX） | 进行中 | `fx pulse`；`fx stamp "残"`（几何底 + 系统字体真字，`MUSE_FONT` 可覆盖） |
 | shot 转场 | 进行中 | `xfade` / `flash` / `iris` / `slices` / `cut` + bars；iris 圆心开窗、slices 横条错位擦入 |
+| shot 时间重映射 | 进行中 | `reverse` / `freeze` / `melt` + 源 shot id；进度与 look scene 跟源 |
 
