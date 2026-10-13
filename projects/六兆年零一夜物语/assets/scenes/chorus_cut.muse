@@ -1,0 +1,85 @@
+namespace rokuchou.chorus_cut;
+
+# 六兆年零一夜物语 · 副歌纵切 20s（墙钟 53–73 → 本地 0–20）。音源/歌词仅 _local_ref。
+timeline {
+  act chorus : 0s..20s
+  shot c01 : 0s..6s scene cage for chorus
+  shot c02 : 6s..14s scene scream for chorus iris 0.4
+  shot c03 : 14s..20s scene afterimage for chorus
+}
+
+tempo { bpm 186 }
+
+asset song = "_local_ref/audio/song.wav";
+asset chorus_lyric = "_local_ref/lyrics/chorus.timing.json";
+
+audio for chorus {
+  track master {
+    from song
+    role song
+    offset 0s
+    clip 53s..73s
+    gain 0.85
+  }
+}
+
+lyric for chorus {
+  from chorus_lyric
+  layer {
+    role foreground
+    size 48
+    align center
+    safe 0.08
+    highlight color "#FFE08A"
+    post_group none
+  }
+}
+
+intent {
+  emotion "curse scream chorus cut" intensity 0.85 for chorus
+}
+
+music for chorus {
+  key "A minor"
+  meter 4/4
+  motif "A3 E4 A4 C5"
+  density 0.7
+}
+
+visual for chorus {
+  background color "#140B1E"
+  bloom 0.40
+  vignette 0.20
+  grain 0.06
+}
+
+visual for chorus scene cage {
+  background color "#0A0C12"
+  bloom 0.22
+  vignette 0.35
+  grain 0.07
+  lut P1 0.4
+  fx pulse 0.45
+}
+
+visual for chorus scene scream {
+  background color "#140B1E"
+  bloom 0.42
+  vignette 0.18
+  grain 0.06
+  lut P4 0.5
+  fx pulse 0.9
+  fx stamp "知" 0.85
+}
+
+visual for chorus scene afterimage {
+  background color "#000000"
+  bloom 0.10
+  vignette 0.55
+  grain 0.03
+}
+
+orchestrate for chorus {
+  hard_constraints: ["no_flash_white_transition", "lyric_above_bloom"]
+  soft_preferences: ["curse light not romantic gold", "silhouette only"]
+}

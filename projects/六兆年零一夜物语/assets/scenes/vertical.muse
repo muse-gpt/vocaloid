@@ -1,0 +1,311 @@
+namespace rokuchou.vertical;
+
+# 六兆年零一夜物语 · 全片 9:16。同时钟与 lyric；中间调略抬、safe 加大。
+timeline {
+  act intro : 0s..22.9s
+  act verse1 : 22.9s..53.7s
+  act chorus1 : 53.7s..71.9s
+  act break1 : 71.9s..84.7s
+  act verse2 : 84.7s..115.6s
+  act chorus2 : 115.6s..133.9s
+  act break2 : 133.9s..147.2s
+  act bridge : 147.2s..160.7s
+  act final : 160.7s..191.4s
+  act outro : 191.4s..217.5s
+
+  shot i01 : 0s..22.9s scene village for intro
+  shot v1a : 22.9s..40s scene cage for verse1
+  shot v1b : 40s..53.7s scene cage for verse1 xfade 0.4
+  shot c1a : 53.7s..60s scene scream for chorus1 iris 0.35
+  shot c1b : 60s..71.9s scene scream for chorus1
+  shot b1a : 71.9s..84.7s scene afterimage for break1
+  shot v2a : 84.7s..100s scene sunset for verse2 xfade 0.5
+  shot v2b : 100s..115.6s scene hand for verse2
+  shot c2a : 115.6s..125s scene scream for chorus2 iris 0.3
+  shot c2b : 125s..133.9s scene scream for chorus2
+  shot b2a : 133.9s..147.2s scene blackout for break2
+  shot br1 : 147.2s..160.7s scene rain for bridge
+  shot f1a : 160.7s..175s scene void for final slices 0.4
+  shot f1b : 175s..191.4s scene void for final
+  shot o01 : 191.4s..217.5s scene afterimage for outro
+}
+
+tempo { bpm 186 }
+
+asset song = "_local_ref/audio/song.wav";
+asset song_lyric = "_local_ref/lyrics/song.timing.json";
+
+audio for intro {
+  track master {
+    from song
+    role song
+    offset 0s
+    clip 0s..217.5s
+    gain 0.85
+  }
+}
+
+lyric for intro {
+  from song_lyric
+  layer {
+    role foreground
+    size 40
+    align center
+    safe 0.14
+    highlight color "#FFE08A"
+    post_group none
+  }
+}
+
+intent {
+  emotion "repressed anticipation vertical" intensity 0.2 for intro
+  emotion "numb sting vertical" intensity 0.4 for verse1
+  emotion "first curse scream vertical" intensity 0.8 for chorus1
+  emotion "hollow afterimage vertical" intensity 0.1 for break1
+  emotion "warm unease vertical" intensity 0.5 for verse2
+  emotion "destruction rising vertical" intensity 0.9 for chorus2
+  emotion "mirror daze vertical" intensity 0.2 for break2
+  emotion "cold vow vertical" intensity 0.6 for bridge
+  emotion "hollow victory vertical" intensity 1.0 for final
+  emotion "tinnitus fade vertical" intensity 0.15 for outro
+}
+
+music for intro {
+  key "A minor"
+  meter 4/4
+  motif "A3 E4 A4"
+  density 0.25
+}
+
+music for verse1 {
+  key "A minor"
+  meter 4/4
+  motif "A3 C4 E4"
+  density 0.4
+}
+
+music for chorus1 {
+  key "A minor"
+  meter 4/4
+  motif "A3 E4 A4 C5"
+  density 0.75
+}
+
+music for break1 {
+  key "A minor"
+  meter 4/4
+  motif "A3"
+  density 0.1
+}
+
+music for verse2 {
+  key "A minor"
+  meter 4/4
+  motif "C4 E4 A4"
+  density 0.45
+}
+
+music for chorus2 {
+  key "A minor"
+  meter 4/4
+  motif "A3 E4 A4 C5"
+  density 0.85
+}
+
+music for break2 {
+  key "A minor"
+  meter 4/4
+  motif "E3 A3"
+  density 0.15
+}
+
+music for bridge {
+  key "A minor"
+  meter 4/4
+  motif "A2 E3"
+  density 0.35
+}
+
+music for final {
+  key "A minor"
+  meter 4/4
+  motif "A3 E4 A4 C5 E5"
+  density 0.95
+}
+
+music for outro {
+  key "A minor"
+  meter 4/4
+  motif "A2"
+  density 0.05
+}
+
+visual for intro {
+  background color "#0A0C12"
+  bloom 0.14
+  vignette 0.38
+  grain 0.06
+  lut P1 0.32
+}
+
+visual for verse1 {
+  background color "#0A0C12"
+  bloom 0.18
+  vignette 0.36
+  grain 0.08
+  lut P1 0.38
+}
+
+visual for chorus1 {
+  background color "#140B1E"
+  bloom 0.38
+  vignette 0.22
+  grain 0.06
+  lut P4 0.48
+}
+
+visual for break1 {
+  background color "#000000"
+  bloom 0.10
+  vignette 0.55
+  grain 0.03
+}
+
+visual for verse2 {
+  background color "#0A0C12"
+  bloom 0.28
+  vignette 0.22
+  grain 0.04
+  lut P2 0.42
+}
+
+visual for chorus2 {
+  background color "#140B1E"
+  bloom 0.42
+  vignette 0.20
+  grain 0.07
+  lut P4 0.52
+}
+
+visual for break2 {
+  background color "#0A0C12"
+  bloom 0.14
+  vignette 0.42
+  grain 0.05
+  lut P1 0.28
+}
+
+visual for bridge {
+  background color "#05080C"
+  bloom 0.16
+  vignette 0.42
+  grain 0.12
+}
+
+visual for final {
+  background color "#140B1E"
+  bloom 0.38
+  vignette 0.26
+  grain 0.07
+  lut P4 0.52
+}
+
+visual for outro {
+  background color "#000000"
+  bloom 0.08
+  vignette 0.55
+  grain 0.03
+}
+
+visual for intro scene village {
+  lut P1 0.32
+}
+
+visual for verse1 scene cage {
+  lut P1 0.42
+  fx pulse 0.25
+}
+
+visual for chorus1 scene scream {
+  lut P4 0.52
+  fx pulse 0.8
+  fx stamp "知" 0.8
+}
+
+visual for break1 scene afterimage {
+  bloom 0.08
+}
+
+visual for verse2 scene sunset {
+  lut P2 0.45
+}
+
+visual for verse2 scene hand {
+  lut P2 0.5
+  fx pulse 0.3
+}
+
+visual for chorus2 scene scream {
+  lut P4 0.58
+  fx pulse 0.9
+  fx stamp "忌" 0.9
+}
+
+visual for break2 scene blackout {
+  vignette 0.5
+}
+
+visual for bridge scene rain {
+  grain 0.14
+}
+
+visual for final scene void {
+  lut P4 0.58
+  fx pulse 0.88
+  fx stamp "知" 0.95
+}
+
+visual for outro scene afterimage {
+  bloom 0.06
+}
+
+orchestrate for intro {
+  hard_constraints: ["no_flash_white_transition", "lyric_safe_area"]
+  soft_preferences: ["taller safe margin", "midtones lifted vs landscape"]
+}
+
+orchestrate for verse1 {
+  hard_constraints: ["no_flash_white_transition", "lyric_safe_area"]
+}
+
+orchestrate for chorus1 {
+  hard_constraints: ["no_flash_white_transition", "lyric_safe_area"]
+}
+
+orchestrate for break1 {
+  hard_constraints: ["no_flash_white_transition"]
+}
+
+orchestrate for verse2 {
+  hard_constraints: ["no_flash_white_transition", "lyric_safe_area"]
+}
+
+orchestrate for chorus2 {
+  hard_constraints: ["no_flash_white_transition", "lyric_safe_area"]
+}
+
+orchestrate for break2 {
+  hard_constraints: ["no_flash_white_transition"]
+}
+
+orchestrate for bridge {
+  hard_constraints: ["no_flash_white_transition", "lyric_safe_area"]
+}
+
+orchestrate for final {
+  hard_constraints: ["no_flash_white_transition", "lyric_safe_area"]
+}
+
+orchestrate for outro {
+  hard_constraints: ["no_flash_white_transition"]
+}

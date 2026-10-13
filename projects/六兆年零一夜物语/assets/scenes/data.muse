@@ -1,0 +1,22 @@
+namespace rokuchou.data;
+
+# 数据入口：共享全片时钟与歌词轨声明（本切片仅 check/compile）。
+timeline {
+  act full : 0s..217.5s
+}
+
+tempo { bpm 186 }
+
+asset song_lyric = "_local_ref/lyrics/song.timing.json";
+
+lyric for full {
+  from song_lyric
+}
+
+intent {
+  emotion "rokuchou data" intensity 0.2 for full
+}
+
+orchestrate for full {
+  hard_constraints: ["timing_export_ready"]
+}
