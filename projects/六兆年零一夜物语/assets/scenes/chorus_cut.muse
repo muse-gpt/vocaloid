@@ -14,6 +14,9 @@ asset song = "_local_ref/audio/song.wav";
 asset chorus_lyric = "_local_ref/lyrics/chorus.timing.json";
 asset chorus_locale = "_local_ref/lyrics/chorus.locale.json";
 
+# Prefab instance ref (check validates LyricCard ports; compose not yet bound).
+instance caption = LyricCard { cue = "C09", intensity = 1.0 }
+
 audio for chorus {
   track master {
     from song
