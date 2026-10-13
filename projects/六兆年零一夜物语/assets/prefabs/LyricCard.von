@@ -1,0 +1,25 @@
+{
+  id: "LyricCard"
+  kind: "prefab"
+  ports: [
+    { id: "cue", type: "CueId" }
+    { id: "intensity", type: "f32", default: "1.0" }
+  ]
+  objects: [
+    {
+      id: "root"
+      components: [
+        { id: "layout", type: "LayoutBox" }
+      ]
+    }
+    {
+      id: "caption"
+      parent: "root"
+      components: [
+        { id: "text", type: "Text" }
+        { id: "binding", type: "LocalizedTextBinding" }
+        { id: "lyric", type: "LyricPresentation" }
+      ]
+    }
+  ]
+}
