@@ -33,6 +33,7 @@ path = "library/landscape/out.mp4"
 [[entries]]
 id = "vertical"
 source = "assets/scenes/vertical.muse"
+render = { width = 1080, height = 1920 }
 
 [[entries.outputs]]
 id = "preview"
